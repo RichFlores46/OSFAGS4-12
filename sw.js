@@ -1,0 +1,227 @@
+const STATIC_CACHE = "static";
+//Se declara un vector con la ubicacion y el nombre de los archivos que forman parte del proyecto necesarios para su ejecución
+const APP_SHELL =[
+    "/",
+    "index.html",
+
+    "assets/css/styles.css",
+    "assets/css/tabs2.css",
+    "assets/css/splidejs.css",
+    "assets/css/all.css",
+    "assets/css/ejemplo.css",
+    "assets/css/medias.css",
+
+    "assets/js/main.js",
+    "assets/js/arriba.js",
+    "assets/js/all.css",
+    "assets/js/autoslider.js",
+    "assets/js/autoslider2.js",
+    "assets/js/auslider3.js",
+    "assets/js/denuncia.js",
+    "assets/js/denunciaAn.js",
+    "assets/js/modal.js",
+    "assets/js/recaptcha.js",
+    "assets/js/slide.js",
+    "assets/js/slidejs.js",
+    "assets/js/tooltip.js",
+    "assets/RA_html/index_ra.html",
+
+    "assets/img/logo_osfags.png",
+    "assets/img/logo2.png",
+    "assets/img/home-favicon.ico",
+
+    "Contacto/index.html",
+    "Bienvenida/index.html",
+    "Comités-y-Órganos/index.html",
+    "Comités-y-Órganos/Actualización.html",
+    "Comités-y-Órganos/grupo.html",
+    "Informe-Auditorías/index.html",
+    "Informe-Auditorías/Actualización.html",
+    "Programas-y-Servicios/index.html",
+    "Programas-y-Servicios/Actualización.html",
+    "Programas-y-Servicios/Opinión-Técnica.html",
+    "Programas-y-Servicios/Programas.html",
+    "Responsabilidades-Administrativas/index.html",
+    "Responsabilidades-Administrativas/Actualización",
+    "Quiénes-Somos/index.html",
+    "Sitios-Interés/index.html",
+    "Denuncia/index.html",
+    "Denuncia/denunciaAnonima.html",
+    "Sobre-el-OSFAGS/index.html",
+    "Temas-Interés/index.html",
+    "Sistema-Estatal-Fiscalizacion/index.html",
+    "Transparencia/index.html",
+    "Transparencia/avisos.html",
+    "Transparencia/Disciplina-Financiera.html",
+    "Transparencia/Otras-Obligaciones.html",
+    "Transparencia/SEVAC.html",
+    "Transparencia/I-Transparencia.html",
+    "Transparencia/II-Transparencia.html",
+    "Transparencia/III-Transparencia.html",
+    "Transparencia/IV-Transparencia.html",
+    "Transparencia/V-Transparencia.html",
+    "Transparencia/VI-Transparencia.html",
+    "Transparencia/VII-Transparencia.html",
+    "Transparencia/VIII-Transparencia.html",
+    "Transparencia/IX-Transparencia.html",
+    "Transparencia/X-Transparencia.html",
+    "Transparencia/XI-Transparencia.html",
+    "Transparencia/XII-Transparencia.html",
+    "Transparencia/XIII-Transparencia.html",
+    "Transparencia/XIV-Transparencia.html",
+    "Transparencia/XV-Transparencia.html",
+    "Transparencia/XVI-Transparencia.html",
+    "Transparencia/XVII-Transparencia.html",
+    "Transparencia/XVIII-Transparencia.html",
+    "Transparencia/XIX-Transparencia.html",
+    "Transparencia/XX-Transparencia.html",
+    "Transparencia/XXI-Transparencia.html",
+    "Transparencia/XXII-Transparencia.html",
+    "Transparencia/XXIII-Transparencia.html",
+    "Transparencia/XXIV-Transparencia.html",
+    "Transparencia/XXV-Transparencia.html",
+    "Transparencia/XXVI-Transparencia.html",
+    "Transparencia/XXVII-Transparencia.html",
+    "Transparencia/XXVIII-Transparencia.html",
+    "Transparencia/XXIX-Transparencia.html",
+    "Transparencia/XXX-Transparencia.html",
+    "Transparencia/XXXI-Transparencia.html",
+    "Transparencia/XXXII-Transparencia.html",
+    "Transparencia/XXXIII-Transparencia.html",
+    "Transparencia/XXXIV-Transparencia.html",
+    "Transparencia/XXXV-Transparencia.html",
+    "Transparencia/XXXVI-Transparencia.html",
+    "Transparencia/XXXVII-Transparencia.html",
+    "Transparencia/XXXVIII-Transparencia.html",
+    "Transparencia/XXXIX-Transparencia.html",
+    "Transparencia/XL-Transparencia.html",
+    "Transparencia/XLI-Transparencia.html",
+    "Transparencia/XLII-Transparencia.html",
+    "Transparencia/XLIII-Transparencia.html",
+    "Transparencia/XLIV-Transparencia.html",
+    "Transparencia/XLV-Transparencia.html",
+    "Transparencia/XLVI-Transparencia.html",
+    "Transparencia/XLVII-Transparencia.html",
+    "Transparencia/XLVIII-Transparencia.html",
+    "Transparencia/XLIX-Transparencia.html",
+
+    "403.html",
+    "404.html",
+
+    "assets/img/BANERS_ANT/comites.png",
+    "assets/img/BANERS_ANT/Contacto.png",
+    "assets/img/BANERS_ANT/Contacto2.png",
+    "assets/img/BANERS_ANT/denuncia_2.png",
+    "assets/img/BANERS_ANT/informe.png",
+    "assets/img/BANERS_ANT/mensaje.png",
+    "assets/img/BANERS_ANT/programas.png",
+    "assets/img/BANERS_ANT/PROTECCION.png",
+    "assets/img/BANERS_ANT/quienes_somos.png",
+    "assets/img/BANERS_ANT/resp_adm.png",
+    "assets/img/BANERS_ANT/sistema_estatal.png",
+    "assets/img/BANERS_ANT/sitios_interes.png",
+    "assets/img/BANERS_ANT/sobre_osfags.png",
+
+    "assets/img/BANERS/1.png",
+    "assets/img/BANERS/2.png",
+    "assets/img/BANERS/3.png",
+    "assets/img/BANERS/4.png",
+    "assets/img/BANERS/5.png",
+    "assets/img/BANERS/6.png",
+    "assets/img/BANERS/7.png",
+    "assets/img/BANERS/8.png",
+    "assets/img/BANERS/9.png",
+    "assets/img/BANERS/10.png",
+    "assets/img/BANERS/11.png",
+    "assets/img/BANERS/12.png",
+    "assets/img/BANERS/contacto75.png",
+
+    "assets/img/menu/Bienvenidaok01.png",
+    "assets/img/menu/Comitesok.png",
+    "assets/img/menu/Comitésok.png",
+    "assets/img/menu/contacto2.png",
+    "assets/img/menu/Contactok.png",
+    "assets/img/menu/denunciaok.png",
+    "assets/img/menu/estatal.png",
+    "assets/img/menu/estatalok.png",
+    "assets/img/menu/Informeok01.png",
+    "assets/img/menu/Interésok.png",
+    "assets/img/menu/Programasok.png",
+    "assets/img/menu/proteccionok01.png",
+    "assets/img/menu/Sistema.png",
+    "assets/img/menu/sobreok01.png",
+    "assets/img/menu/sobreosfags.png",
+    "assets/img/menu/Somosok01.png",
+    "assets/img/logo_osfags.png",
+    "assets/img/logo2.png",
+
+    "assets/img/person/ADC.jpeg",
+    "assets/img/person/AL.jpg",
+    "assets/img/person/AN.jpeg",
+    "assets/img/person/AR.jpg",
+    "assets/img/person/AS.jpg",
+    "assets/img/person/ELL.jpg",
+    "assets/img/person/FR.jpeg",
+    "assets/img/person/HC.jpg",
+    "assets/img/person/LR.jpg",
+    "assets/img/person/MB.jpg",
+    "assets/img/person/Neri.jpg",
+    "assets/img/person/RS.jpeg",
+
+    "assets/img/carrusel1/car1.1_Programa.png",
+    "assets/img/carrusel1/car1.2_Transparencia.png",
+    "assets/img/carrusel1/car1.3_Informe2021.jpg",
+    "assets/img/carrusel1/car1.4_Marco.jpg",
+    "assets/img/carrusel1/car1.5_Sistema.jpg",
+
+    "assets/img/carrusel2/1-6.png",
+    "assets/img/carrusel2/1-13.png",
+
+    "assets/img/somos/auditor1.jpeg",
+    "assets/img/somos/auditor2.jpeg",
+    "assets/img/somos/auditor3.jpeg",
+    "assets/img/somos/IMG_9653.JPG",
+    "assets/img/somos/Mision.jpeg",
+    "assets/img/somos/somostodos.jpeg",
+    "assets/img/somos/valores.JPG",
+    "assets/img/somos/vision.JPG",
+
+    "assets/pdf/AVISO INTEGRAL CRA.pdf",
+
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css",
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js",
+    "https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css",
+    "cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js",
+    "https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js",
+    "https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v17.0",
+
+
+    "https://code.jquery.com/jquery-3.6.0.min.js",
+    "https://cdn.userway.org/widget.js",
+    "https://www.google.com/recaptcha/api.js",
+    "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js",
+    "https://www.google.com/maps/place/Organo+Superior+de+Fiscalizaci%C3%B3n+del+Estado+de+Aguascalientes/@21.912196,-102.311548,15z/data=!4m6!3m5!1s0x8429ee74809cca13:0x20d6cf878d49c6de!8m2!3d21.9121957!4d-102.3115484!16s%2Fg%2F11b6qws0sv?hl=en-US&entry=ttu"
+
+    
+];
+//Se agrega links de bootstrap, css y js
+
+//En el evento install se agregan los archivos a la caché, se ejecuta cuando se abre la app automático
+self.addEventListener("install", (e) => {
+    const cacheStatic = caches
+    .open(STATIC_CACHE)
+    .then((cache) => cache.addAll(APP_SHELL));
+
+    e.waitUntil(cacheStatic);
+});
+//En el evento fetch se envian los archivos a la pagina web o páginas, se ejecutan cuando lo solicita la página
+self.addEventListener("fetch", (e) => {
+    console.log("fectch! ", e.request);
+
+    e.respondWith(
+        caches
+            .match(e.request)
+            .then(res => res || fetch(e.request))
+            .catch(console.log)
+    );
+});
