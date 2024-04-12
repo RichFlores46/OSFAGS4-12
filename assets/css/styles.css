@@ -1,0 +1,547 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(215, 215, 215);
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+p{
+    font-size: 18px;
+}
+h2{
+    text-align: center;
+    font-size: 32px;
+    color: purple;
+    user-select: none;
+}
+b{
+    user-select: none;
+}
+h5{
+    user-select: none;
+}
+h2 #exampleModalLabel{
+    text-align: center;
+}
+label{
+    font-size: 18px;
+}
+ion-icon{
+    font-size: 40px;
+}
+#letrav{
+    border: none;
+}
+#letrav .fa-arrow-left{
+    font-size: 2rem;
+}
+#imgcar1{
+    width: 100%;
+    height: 194px;
+}
+#imgcar2{
+    width: 100%;
+    height: 194px;
+}
+#auditor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto; 
+}
+#img-center{
+    position:relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    transition: 0.5s;   
+}
+#img-logo3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+#img-logo4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+}
+#txtsomos1{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    right: 5%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+}
+#txtsomos{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#txtsomos ol li{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    list-style: inside;
+}
+/*Opinión Técnica*/
+#ley1{
+    background-color: #000;
+    color: white;
+    text-align: center
+}
+#btn-largoo{
+    background-color:rgb(16, 16, 16);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+/*Comité de Bienes*/
+#btn-info{
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+/*Avisos*/
+#btn-privacidad1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(154, 154, 154);
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 20px;   
+}
+#btn-privacidad2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #147568;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 20px;
+}
+.actAsDiv{
+    display:block;
+}
+#btn-arriba{
+    position: fixed;
+    display: block;
+    text-align: left;
+    bottom: 20px;
+    right: -100px;
+    width: 52px;
+    height: 45px;
+    background-color: #147568;
+    color: #fff;
+    transition: all 1s;
+    border: 3px solid black;
+}
+#btn-arriba .fa-arrow-up{
+    font-size: 1.7rem;
+    vertical-align: middle;
+    padding: 0px 1.5px;
+}
+#btn-arriba:active{
+    background-color: rgb(87, 87, 87);
+    transition: all 0.5s ease;
+}
+
+#txtinfau > a{
+    font-size: 27px;
+    color: #147568;
+    text-decoration: none;
+    list-style: square;
+}
+
+#txtinfau #inf22{
+    font-size: 27px;
+    color: #147568;
+    text-decoration: none; 
+    cursor: wait;
+}
+#fondosomoslogo{
+    width: 100%;
+    height: auto;
+    opacity: 0.25;
+}
+#titulone{
+    text-align: center; 
+    background: linear-gradient(90deg,#147568, #aaaaaa); 
+    color: #fff;
+    font-size: 25px; 
+    font-weight: bold;
+}
+#titulotwo{
+    text-align: center; 
+    background: linear-gradient(270deg,#147568, #aaaaaa); 
+    color: #fff;
+    font-size: 25px; 
+    font-weight: bold;
+}
+#txt{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 18px;
+}
+#title{
+    font-family: 'Fjalla One', sans-serif;
+}
+#txtli{
+    font-size: 27px;
+    color: #147568;
+    text-decoration: none;
+    list-style: none;
+}
+#txtli2{
+    font-size: 27px;
+    color: #147568;
+    text-decoration: none;
+}
+#txtligroup{
+    font-size: 27px;
+    color: #147568;
+    text-decoration: none;
+    list-style: circle;
+}
+
+#txt2{
+    font-weight: bold;
+    font-size: 18px;
+}
+#imgcard{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 470px;
+    height: 300px;
+} 
+#imgcar22{
+    width: 300px;
+    height: auto;
+}
+.div-imagen {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    overflow: hidden;
+} 
+.div-imagen > #div1{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    margin:0;
+}  
+#txtsplide{
+    color: red;
+}
+#btn-21{
+    display: inline-block;
+    padding: 20px 50px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    transition: all 0.6s ease;
+    z-index: 2;
+    border: 3px solid #ffffff;
+    width: 100%;
+    height: auto;
+    background-color: #147568;
+    color: white;
+}
+#btn-22{
+    display: inline-block;
+    position: relative;
+    transition: all 0.6s ease;
+    z-index: 2;
+    border: 3px solid #ffffff;
+}
+#btn-22 img{
+    width: 100%;
+    height: auto;
+}
+#btn-212{
+    display: inline-block;
+    padding: 20px 50px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    transition: all 0.6s ease;
+    z-index: 2;
+    border: 3px solid #ffffff;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #aaaaaa, #147568);
+    color: white;
+}
+.contact p{
+    font-size: 19px;
+}
+#cont1{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #147568;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px 5px;
+}
+#cont1TNT{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #147568;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    text-align: justify;
+    padding: 5px 5px;
+}
+#cont11{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #147568;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    text-align: justify;
+    padding: 5px 5px;
+}
+#contnt1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(154, 154, 154);
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 20px;
+    overflow: hidden;
+}
+#contnt4{
+       width: 100%;
+       height: 100%;
+       padding: 5px 5px;
+       background-color: #ccc;
+       border-radius: 20px;
+       overflow: hidden; 
+}
+#contnt4  .textnt10{
+    font-size: 27px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0;
+}
+#contnt4 .textnt20{
+    font-size: 21px;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+}
+#contnt4  .textnt30{
+    font-size: 21px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0;
+}
+#contnt3{
+    width: 100%;
+    height: auto;
+    padding: 5px 5px;
+    background-color: #147568;
+    border-radius: 20px;
+    overflow: hidden;  
+}
+#contnt3{
+    #imgperson-dir{
+        width: 172px;
+        height: auto;
+        margin: 13px 15px;
+        border-radius: 20%;
+        margin-bottom: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #imgperson{
+        width: 153px;
+        height: auto;
+        margin: 13px 15px; 
+        border-radius: 20%; 
+        margin-bottom: 0; 
+        display: block;      
+        margin-left: auto;                          
+        margin-right: auto;
+    }
+} 
+#contnt3  .textnt11{
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#contnt3 .textnt22{
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+}
+#contnt3 .textnt221{
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+}
+#contnt3  .textnt33{
+    font-size: 21px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#contnt3{
+    width: 100%;
+    height: auto;
+    padding: 5px 5px;
+    background-color: #1c9787;
+    border-radius: 20px;
+    overflow: hidden;  
+}
+#contnt3  .textnt111{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#contnt3 .textnt221{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+}
+#contnt3 .textnt2211{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;   
+}
+#contnt3  .textnt331{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#contnt2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #147568;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 20px;
+    overflow: hidden;
+}
+.fb-page{
+    align-items: center;
+}
+.footer{
+    background-color: grey;
+    padding: 50px 0;
+    margin-top: auto;
+}
+/* Personaliza el color del botón de denuncia anonima a morado */
+#denunciaAn{
+    background-color: #6c2f6d;
+    text-decoration: none;
+    color: #fff;
+}
+
+#mail, #facebook, #youtube, #twitter{
+    width: auto;
+}
+
+.fa-x-twitter{
+    color: #fff;
+}
+.fa-square-facebook{
+    color: blue;
+}
+.xmark{
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+}
+.fa-xmark{
+    color: red; 
+    height: 70px; 
+}
+.fa-question{
+    color: red; 
+    height: 70px; 
+}
+.btn-error{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+#iconcon1{
+    font-size: 1.5rem;
+    color:#333;
+    text-align: center;
+}
+#iconcon{
+    font-size: 2rem;
+    color:#333;
+    text-align: right;
+}

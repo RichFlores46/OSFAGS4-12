@@ -1,0 +1,550 @@
+@media(hover:hover){
+    /* Cambia el color del texto del botón a blanco */
+    #denunciaAn:hover {
+        background-color: purple;
+    }
+    #contnt1:hover, #contnt2:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    } 
+    #conttransparencia .row .col-md-3 a:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    #contavisos .row .col-md-4 a:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    #letrav:hover {
+        color: #147568;
+    }
+    #btn-largoo:hover{
+        background: rgb(105, 105, 105);
+        color: black;
+        text-decoration: none;
+    }
+    #btn-privacidad1:hover, #btn-privacidad2:hover{
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    #btn-21:hover{
+        background-color: #085148;
+        box-shadow: 0 0 25px #147568;
+        color: white;
+        transform: scale(1.05);
+    }
+
+    #imgcenter:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+        overflow: hidden;
+      }
+    #btn-22:hover{
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+        color: white;
+        transform: scale(1.05);
+    }
+    #btn-212:hover{
+        background-color: #085148;
+        box-shadow: 0 0 20px #147568;
+        color: white;
+    }
+    #cont1:hover{
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    [id^="ejemplo"]:hover{
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+        color: white;
+        transform: scale(1.05);
+    }
+    #txtli:hover, #txtli2:hover, #txtligroup:hover{
+        font-weight: bold;
+    }
+    #txtinfau > a:hover{
+        font-weight: bold;
+    }
+    
+}
+
+@media screen and (max-width:369px){
+    #imgcenter{
+        width: 400px;
+        height:auto;
+    }
+    .div-imagen > #div1 {
+        padding: 180px;
+    }
+    .fb-page[data-width]{
+        width:330px;
+    }
+    .uk-navbar-center img{
+        width: 120px;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    h2{
+        font-size: 25px;
+    }
+    #cont1 > h3{
+        font-size: 22px;
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2rem;
+    }
+    #letrav .fa-arrow-left{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width:379px){
+    #imgcenter{
+        width: 400px;
+        height:auto;
+    }
+    .div-imagen > #div1 {   
+        padding: 180px;
+    }
+    .fb-page[data-width]{
+        width:350px;
+    }
+    .uk-navbar-center img{
+        width: 120px;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    #pdfaviso{
+        width: 100%;
+        height: 80%;
+    }
+    h2{
+        font-size: 25px;
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2rem;
+    }
+    #letrav .fa-arrow-left{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width:380px) and (max-width:400px){
+    #imgcenter{
+        width: 400px;
+        height:auto;
+    }
+    .div-imagen > #div1 {
+        padding: 180px;
+    }
+    .fb-page[data-width]{
+        width:365px;
+    }
+    .uk-navbar-center img{
+        width: 120px;
+    }
+    #pdfaviso{
+        width: 100%;
+        height: 200px;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    h2{
+        font-size: 25px;
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2rem;
+    }
+    #letrav .fa-arrow-left{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:420px){
+    #imgcenter{
+        width: 400px;
+        height:auto;
+    }
+    .div-imagen > #div1 {   
+        padding: 180px;
+      }
+    .fb-page[data-width]{
+        width:380px;
+    }
+    .uk-navbar-center img{
+        width: 120px;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    h2{
+        font-size: 27px;
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:421px) and (max-width:700px){
+    h2{
+        font-size: 25px;
+    }
+    #imgcenter{
+        width: 400px;
+        height:auto;
+    }
+    .fb-page[data-width]{
+        width:450px;
+    }
+    .div-imagen > #div1 {   
+        padding: 180px;
+    }
+    #cont10{
+        width: 360px;
+        height: 150px;
+        position:relative;
+        display: flex;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+    #cont10 img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    #cont10 p{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        width: 100px;
+        height: 30px;
+        border: 2px solid red;
+        text-align: center;
+        user-select: none;
+    }
+    .uk-navbar-center img{
+        width: 120px;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:701px) and (max-width:750px){
+    .fb-page[data-width]{
+        width:450px;
+    }
+    #imgcenter{
+        width: 550px;
+        height:auto;
+    }
+    .div-imagen > #div1 {
+        padding: 240px;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    #img-person{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h2{
+        font-size: 27px;
+    }
+    .uk-navbar-center img{
+        width: 120px;
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:751px) and (max-width:766px){
+    .fb-page[data-width]{
+        width:500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #imgcenter{
+        width: 550px;
+        height:auto;
+    }   
+    .div-imagen > #div1 {
+        padding: 240px;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    #img-person{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h2{
+        font-size: 27px;
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:766px) and (max-width:791px){
+    .fb-page[data-width]{
+        width:220px;
+    } 
+    #imgcenter{
+        width: 550px;
+        height:auto;
+    }
+    .div-imagen > #div1 {
+        padding: 240px;
+    }
+    #cont10{
+        width: 370px;
+        height: 150px;
+        position:relative;
+        display: flex;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+    #cont10 img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    #cont10 p{
+        font-size: 1.7rem;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        width: 170px;
+        height: 55px;
+        border: 4px solid red;
+        text-align: center;
+        user-select: none;
+    }
+    #colok > #colok1{
+        width: 33.33%;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    h2{
+        font-size: 27px;
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:792px) and (max-width:991px){
+    .fb-page[data-width]{
+        width:220px;
+    }
+    /*
+    #ejemplocontacto{
+        background-image: url(../img/menu/Contactok.png);
+    }*/
+    #imgcenter{
+        width:720px;
+        height:auto;
+    }
+    .div-imagen > #div1 {
+        padding: 330px;
+    }
+    #colok > #colok1{
+        width: 33.33%;
+    }
+    h2{
+        font-size: 27px;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+    #imgcenter{
+        width:720px;
+        height:auto;
+    }
+    .div-imagen > #div1 {
+        padding: 330px;
+    }
+    .fb-page[data-width]{
+        width:300px;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    #cont10{
+        width: 650px;
+        height: 350px;
+        position:relative;
+        display: flex;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+    #cont10 img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    #cont10 p{
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        width: 320px;
+        height: 95px;
+        border: 8px solid red;
+        text-align: center;
+        user-select: none;
+    }
+    .uk-navbar-center img{
+        width: 170px;
+    }
+    #colok > #colok1{
+        width: 33.33%;
+    }
+    h2{
+        font-size: 30px;
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1400px){
+    .fb-page[data-width]{
+        width:355px;
+    }
+    #ejemplocontacto{
+        background-image: url(../img/BANERS/12.png);
+    }
+    #imgcenter{
+        width:720px;
+        height:auto;
+    }
+    .div-imagen > #div1 {
+        padding: 330px;
+    }
+    #cont10{
+        width: 650px;
+        height: 350px;
+        position:relative;
+        display: flex;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+    #cont10 img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    #cont10 p{
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        width: 320px;
+        height: 95px;
+        border: 8px solid red;
+        text-align: center;
+        user-select: none;
+    }
+    .uk-navbar-center img{
+        width: 170px;
+    }
+    #colok > #colok1{
+        width: 33.33%;
+    }
+    #pdfaviso{
+        width: 100%;
+        height: 500px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    #twitter, #mail, #facebook, #youtube,  .fa-brands, .fa-regular{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:1401px){
+    .div-imagen > #div1 {
+        padding: 130px;
+    }
+    #imgcenter{
+        width:120px;
+        height:auto;
+    }
+    #imgcenter{
+        width:720px;
+        height:auto;
+    }
+    .div-imagen > #div1 {
+        padding: 330px;
+      }
+    #cont10{
+        width: 650px;
+        height: 350px;
+        position:relative;
+        display: flex;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+    #cont10 img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    #cont10 p{
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        width: 320px;
+        height: 95px;
+        border: 8px solid red;
+        text-align: center;
+        user-select: none;
+    }
+    .uk-navbar-center img{
+        width: 170px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    #facebook, #mail, #youtube, #twitter, .fa-regular, .fa-brands{
+        font-size: 2.5rem;
+    }
+}
